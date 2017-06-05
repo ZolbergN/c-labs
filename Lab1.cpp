@@ -12,7 +12,7 @@ int main()
 	fileexample1.open("/filelaba/fileexample1.txt",ios::binary);
 	fileexample2.open("/filelaba/fileexample2.txt",ios::binary);
 	
-	int sum1, sum2; //Посчитаем кол-во строк у обоих файлов
+	int sum1, sum2; //РџРѕСЃС‡РёС‚Р°РµРј РєРѕР»-РІРѕ СЃС‚СЂРѕРє Сѓ РѕР±РѕРёС… С„Р°Р№Р»РѕРІ
 	sum1 = 0; 
         sum2 = 0;
 	string str;
@@ -33,10 +33,10 @@ int main()
 	fileexample2.clear();
 	fileexample2.seekg(0, ios::beg);
 	
-	if(sum1 != sum2) // Cравниваем кол-во строк
+	if(sum1 != sum2) // CСЂР°РІРЅРёРІР°РµРј РєРѕР»-РІРѕ СЃС‚СЂРѕРє
 	{
-	    cout << "Отличия в кол-ве строк" << "\n";
-	    cout << "У 1 файла " << sum1 << " строки, а у 2 "<< sum2 << " строки" << "\n";
+	    cout << "РћС‚Р»РёС‡РёСЏ РІ РєРѕР»-РІРµ СЃС‚СЂРѕРє" << "\n";
+	    cout << "РЈ 1 С„Р°Р№Р»Р° " << sum1 << " СЃС‚СЂРѕРєРё, Р° Сѓ 2 "<< sum2 << " СЃС‚СЂРѕРєРё" << "\n";
 	}
 
 	char string1[256], string2[256]; 
@@ -48,9 +48,9 @@ int main()
 	    n++;
 	    if(strcmp(string1, string2) != 0)
 	    {
-	    	cout << n << " строка отличается" << "\n";
-	        cout << "   " << string1 << " - в первом файле \n";
-	        cout << "   " << string2 << " - во втором файле\n";
+	    	cout << n << " СЃС‚СЂРѕРєР° РѕС‚Р»РёС‡Р°РµС‚СЃСЏ" << "\n";
+	        cout << "   " << string1 << " - РІ РїРµСЂРІРѕРј С„Р°Р№Р»Рµ \n";
+	        cout << "   " << string2 << " - РІРѕ РІС‚РѕСЂРѕРј С„Р°Р№Р»Рµ\n";
 	    }
 	}
 	return 0;
